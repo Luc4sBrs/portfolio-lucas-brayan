@@ -2,8 +2,9 @@
 body{background:var(--paper);color:var(--ink)}
 .topbar{background:#151515;color:#fff;border-color:#333}
 .brand{gap:0;font-size:14px;letter-spacing:-.06em}
-.brand-name{font-weight:800}
+.brand-name{font-weight:800;letter-spacing:.06em}
 .brand-period{color:#fff}
+.hero h1{font-size:clamp(52px,6.6vw,90px)}
 .navigation a{position:relative}
 .navigation a:not(.nav-contact)::after{content:"";position:absolute;left:0;right:100%;bottom:-6px;height:1px;background:#fff;transition:right .22s ease}
 .navigation a:not(.nav-contact):hover::after{right:0}
@@ -81,5 +82,6 @@ footer>span{color:#bcbcb8}
 .mini-project.reveal{transition-delay:.06s}
 .mini-project.reveal:nth-child(2){transition-delay:.16s}
 
-@media(max-width:620px){.brand{font-size:15px}.navigation.open{background:#151515;color:#fff;border-color:#333}.menu-toggle span{background:#fff}.hero-art{animation:art-appear .9s .14s both cubic-bezier(.2,.7,.2,1)}}
+@media(max-width:850px){.hero h1{font-size:clamp(46px,7.5vw,64px)}}
+@media(max-width:620px){.brand{font-size:15px}.navigation.open{background:#151515;color:#fff;border-color:#333}.menu-toggle span{background:#fff}.hero h1{font-size:clamp(40px,10.5vw,54px)}.hero-art{animation:art-appear .9s .14s both cubic-bezier(.2,.7,.2,1)}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important;scroll-behavior:auto!important}.reveal{opacity:1;transform:none}}
