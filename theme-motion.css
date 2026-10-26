@@ -36,6 +36,7 @@ body{background:var(--paper);color:var(--ink)}
 .habit-visual{background:#deddd8}
 .writing-visual{background:#d8d8d5}
 .habit-title strong{color:#414141}
+.mini-window-head b{color:#151515}
 .habit-streak>span{background:#171717;color:#fff}
 .habit-week i.complete{background:#171717;border-color:#171717;color:#fff}
 .kanban-columns i em{background:#e8e7e2;color:#444}
