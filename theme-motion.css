@@ -1,0 +1,84 @@
+:root{--paper:#f4f3ef;--ink:#151515;--muted:#737373;--green:#151515;--line:#d9d8d3}
+body{background:var(--paper);color:var(--ink)}
+.topbar{background:#151515;color:#fff;border-color:#333}
+.brand{gap:0;font-size:14px;letter-spacing:-.06em}
+.brand-name{font-weight:800}
+.brand-period{color:#fff}
+.navigation a{position:relative}
+.navigation a:not(.nav-contact)::after{content:"";position:absolute;left:0;right:100%;bottom:-6px;height:1px;background:#fff;transition:right .22s ease}
+.navigation a:not(.nav-contact):hover::after{right:0}
+.navigation .nav-contact{border-color:#fff}
+.status-dot,.card-dot{background:#151515}
+.period{color:#151515}
+.hero-intro{color:#5f5f5f}
+.art-orbit{border-color:#dbdad5}
+.art-card{border-color:#e4e3de;box-shadow:0 20px 70px #11111110}
+.skeleton-pill{background:#191919}
+.chart-label em{color:#555}
+.chart i{background:#171717}
+.chart i:nth-child(2n){background:#8a8a8a}
+.art-stamp b{color:#151515}
+.button-dark{background:#111;color:#fff}
+.button-light{background:#fff;color:#111}
+.text-link{border-color:#a6a6a1}
+.about h2 span{color:#858580}
+.section-kicker span:first-child{color:#3f3f3f}
+.experience-index{color:#858580}
+.projects{background:#e9e8e4}
+.ticket-visual{background:#deddd8}
+.ticket-window{border-color:#d2d1cb}
+.ticket-side{background:#171717}
+.ticket-side b{color:#fff}
+.avatar{background:#deded9}
+.avatar-alt{background:#cacac6}
+.ticket-row em,.ticket-row em.done{color:#555}
+.visual-note{color:#555}
+.habit-visual{background:#deddd8}
+.writing-visual{background:#d8d8d5}
+.habit-title strong{color:#414141}
+.habit-streak>span{background:#171717;color:#fff}
+.habit-week i.complete{background:#171717;border-color:#171717;color:#fff}
+.kanban-columns i em{background:#e8e7e2;color:#444}
+.sync-label span{background:#171717}
+.contact .period{color:#fff}
+.contact .section-kicker{color:#c5c5c1}
+.contact-left>.eyebrow{color:#c5c5c1}
+.contact-right>div>span{color:#c5c5c1}
+footer{background:#151515;border-color:#3a3a3a}
+footer .brand{color:#fff}
+footer .brand-period{color:#fff}
+footer>span{color:#bcbcb8}
+.skill-list b,.tag-list span{transition:background-color .2s ease,color .2s ease,border-color .2s ease,transform .2s ease}
+.skill-list b:hover,.tag-list span:hover{background:#151515;border-color:#151515;color:#fff;transform:translateY(-2px)}
+.button{transition:transform .25s cubic-bezier(.2,.75,.25,1),background-color .2s ease,color .2s ease}
+.button-dark:hover{background:#444}
+.button-light:hover{background:#d8d8d4}
+.mini-project{transition:transform .3s ease,box-shadow .3s ease}
+.mini-project:hover{transform:translateY(-5px);box-shadow:0 18px 38px #11111112}
+.mini-project-links a{transition:opacity .2s ease}
+.mini-project-links a:hover{opacity:.55}
+.navigation a:focus-visible,.brand:focus-visible,.button:focus-visible,.text-link:focus-visible,.project-links a:focus-visible,.mini-project-links a:focus-visible{outline:2px solid #151515;outline-offset:4px}
+
+@keyframes rise-in{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:translateY(0)}}
+@keyframes art-appear{from{opacity:0}to{opacity:1}}
+@keyframes orbit-turn{to{transform:rotate(360deg)}}
+@keyframes float-back{0%,100%{transform:rotate(-8deg) translateY(0)}50%{transform:rotate(-8deg) translateY(-8px)}}
+@keyframes float-front{0%,100%{transform:rotate(4deg) translateY(0)}50%{transform:rotate(4deg) translateY(7px)}}
+@keyframes grow-bar{from{transform:scaleY(.08)}to{transform:scaleY(1)}}
+.hero-copy>.eyebrow{animation:rise-in .65s both cubic-bezier(.2,.7,.2,1)}
+.hero h1{animation:rise-in .75s .08s both cubic-bezier(.2,.7,.2,1)}
+.hero-intro{animation:rise-in .7s .17s both cubic-bezier(.2,.7,.2,1)}
+.hero-actions{animation:rise-in .65s .25s both cubic-bezier(.2,.7,.2,1)}
+.hero-art{animation:art-appear .9s .14s both cubic-bezier(.2,.7,.2,1)}
+.orbit-two{animation:orbit-turn 50s linear infinite}
+.card-back{animation:float-back 7s 1s ease-in-out infinite}
+.card-front{animation:float-front 6s .6s ease-in-out infinite}
+.chart i{transform-origin:bottom;animation:grow-bar .85s both cubic-bezier(.2,.7,.2,1)}
+.chart i:nth-child(1){animation-delay:.35s}.chart i:nth-child(2){animation-delay:.42s}.chart i:nth-child(3){animation-delay:.49s}.chart i:nth-child(4){animation-delay:.56s}.chart i:nth-child(5){animation-delay:.63s}.chart i:nth-child(6){animation-delay:.7s}.chart i:nth-child(7){animation-delay:.77s}.chart i:nth-child(8){animation-delay:.84s}
+.reveal{opacity:0;transform:translateY(22px);transition:opacity .65s ease,transform .65s cubic-bezier(.2,.7,.2,1)}
+.reveal.visible{opacity:1;transform:translateY(0)}
+.mini-project.reveal{transition-delay:.06s}
+.mini-project.reveal:nth-child(2){transition-delay:.16s}
+
+@media(max-width:620px){.brand{font-size:15px}.navigation.open{background:#151515;color:#fff;border-color:#333}.menu-toggle span{background:#fff}.hero-art{animation:art-appear .9s .14s both cubic-bezier(.2,.7,.2,1)}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important;scroll-behavior:auto!important}.reveal{opacity:1;transform:none}}

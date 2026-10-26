@@ -25,7 +25,7 @@ const observer = new IntersectionObserver((entries) => {
   });
 }, { threshold: 0.12 });
 
-document.querySelectorAll(".section-kicker, .about-content, .experience-row, .project-card, .contact-right").forEach((element) => {
+document.querySelectorAll(".section-kicker, .about-content, .skill-strip, .experience-row, .projects-heading, .project-card, .mini-project, .contact-right").forEach((element) => {
   element.classList.add("reveal");
   observer.observe(element);
 });
