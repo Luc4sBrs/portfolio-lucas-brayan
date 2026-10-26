@@ -43,6 +43,7 @@ body{background:var(--paper);color:var(--ink)}
 .kanban-columns i em{background:#e8e7e2;color:#444}
 .sync-label span{background:#171717}
 .contact .period{color:#fff}
+.contact{background:#111;color:#fff}
 .contact .section-kicker{color:#c5c5c1}
 .contact-left>.eyebrow{color:#c5c5c1}
 .contact-right>div>span{color:#c5c5c1}
