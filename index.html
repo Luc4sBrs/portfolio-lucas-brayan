@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#f3f1e9" />
+    <meta name="description" content="Portfólio de Lucas Brayan da Silva, desenvolvedor frontend júnior especializado em React, TypeScript e interfaces conectadas a APIs." />
+    <title>Lucas Brayan da Silva — Desenvolvedor Frontend</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header class="topbar">
+      <a class="brand" href="#inicio" aria-label="Lucas Brayan, início"><span class="brand-mark">LB</span><span>lucas brayan</span></a>
+      <button class="menu-toggle" aria-expanded="false" aria-controls="navigation" aria-label="Abrir menu"><span></span><span></span></button>
+      <nav id="navigation" class="navigation" aria-label="Navegação principal">
+        <a href="#sobre">Sobre</a><a href="#experiencia">Experiência</a><a href="#projetos">Projetos</a><a href="#contato" class="nav-contact">Vamos conversar <span>↗</span></a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero page-grid" id="inicio">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="status-dot"></span> DESENVOLVEDOR FRONTEND · JARAGUÁ DO SUL, SC</p>
+          <h1>Interfaces que<br />fazem sentido<span class="period">.</span></h1>
+          <p class="hero-intro">Sou <strong>Lucas Brayan</strong>, desenvolvedor frontend júnior. Transformo problemas do dia a dia em produtos digitais claros, responsivos e úteis.</p>
+          <div class="hero-actions"><a class="button button-dark" href="#projetos">Ver projetos <span>↓</span></a><a class="text-link" href="public/CV_Lucas_Brayan_da_Silva.pdf" target="_blank" rel="noreferrer">Abrir currículo <span>↗</span></a></div>
+        </div>
+        <div class="hero-art" aria-label="Ilustração abstrata de uma interface em construção" role="img">
+          <div class="art-orbit orbit-one"></div><div class="art-orbit orbit-two"></div>
+          <div class="art-card card-back"><span class="tiny-label">STATUS DO PROJETO</span><div class="skeleton-line"></div><div class="skeleton-line short"></div><div class="skeleton-pill"></div></div>
+          <div class="art-card card-front"><div class="card-top"><span class="tiny-label">DASHBOARD / 01</span><span class="card-dot"></span></div><div class="chart-label">Tudo em<br /><em>movimento.</em></div><div class="chart"><i style="--h:28%"></i><i style="--h:48%"></i><i style="--h:38%"></i><i style="--h:75%"></i><i style="--h:59%"></i><i style="--h:92%"></i><i style="--h:70%"></i><i style="--h:100%"></i></div><div class="chart-foot"><span>JAN</span><span>FEV</span><span>MAR</span><span>ABR</span></div></div>
+          <span class="art-stamp">FEITO COM<br />CURIOSIDADE <b>✳</b></span>
+        </div>
+        <div class="hero-bottom"><span>REACT&nbsp; / &nbsp;TYPESCRIPT&nbsp; / &nbsp;UI</span><a href="#sobre">ROLE PARA DESCOBRIR <span>↓</span></a><span>01 — 04</span></div>
+      </section>
+
+      <section class="about section-pad" id="sobre">
+        <div class="section-kicker"><span>01</span><span>UM POUCO SOBRE MIM</span></div>
+        <div class="about-content"><h2>Da ideia à interface,<br /><span>com atenção aos detalhes.</span></h2><div class="about-copy"><p>Há cerca de dois anos construo ferramentas que ajudam pessoas a trabalhar melhor. Minha experiência passa por dashboards internos, automações de processos e um produto full-stack com atualizações em tempo real.</p><p>Gosto de entender o contexto antes de escrever código: conversar com quem usa, organizar o problema e dar forma a uma solução simples. Hoje busco uma oportunidade como <strong>Frontend Developer</strong> para continuar crescendo junto a um time de produto e engenharia.</p><a class="text-link" href="https://www.linkedin.com/in/lucas-brayan" target="_blank" rel="noreferrer">Conecte-se comigo <span>↗</span></a></div></div>
+        <div class="skill-strip"><span>NO MEU DIA A DIA</span><div class="skill-list"><b>React</b><b>TypeScript</b><b>APIs REST</b><b>Tailwind CSS</b><b>TanStack Query</b><b>Node.js</b><b>n8n</b></div></div>
+      </section>
+
+      <section class="experience section-pad" id="experiencia">
+        <div class="section-kicker"><span>02</span><span>EXPERIÊNCIA</span></div>
+        <div class="experience-row"><div><p class="eyebrow">2024 — 2026</p><h2>Aprendiz de<br />Programação</h2></div><div class="experience-detail"><div class="company-line"><strong>Grupo Malwee</strong><span>Jaraguá do Sul, SC</span></div><p>Desenvolvi dashboards internos em React e TypeScript para acompanhar processos produtivos, incluindo o monitoramento de máquinas de costura.</p><p>Também participei da construção de um MVP de gestão orçamentária e automatizei tarefas recorrentes com n8n e Google Apps Script — trabalhando com áreas internas para entender necessidades e ajustar as interfaces ao uso real.</p><div class="tag-list"><span>React</span><span>TypeScript</span><span>n8n</span><span>Google Apps Script</span></div></div><div class="experience-index">01</div></div>
+      </section>
+
+      <section class="projects section-pad" id="projetos">
+        <div class="section-kicker"><span>03</span><span>TRABALHO SELECIONADO</span></div>
+        <div class="projects-heading"><h2>Construído com<br />intenção<span class="period">.</span></h2><p>Projetos onde pude explorar arquitetura, experiência de uso e integração entre serviços.</p></div>
+        <article class="project-card">
+          <div class="project-visual ticket-visual"><div class="ticket-window"><div class="window-bar"><span></span><span></span><span></span><small>TICKETFLOW / PAINEL</small></div><div class="ticket-body"><div class="ticket-side"><b>TF</b><i></i><i></i><i></i></div><div class="ticket-main"><div class="ticket-head"><span>Visão geral</span><small>ÚLTIMOS 7 DIAS</small></div><div class="ticket-stats"><div><small>ABERTOS</small><b>12</b></div><div><small>EM ANDAMENTO</small><b>08</b></div><div><small>RESOLVIDOS</small><b>24</b></div></div><div class="ticket-row"><span class="avatar">MA</span><span>Erro ao acessar conta</span><em>Em andamento</em></div><div class="ticket-row"><span class="avatar avatar-alt">JC</span><span>Atualização de cadastro</span><em class="done">Resolvido</em></div></div></div></div><span class="visual-note">INTERFACES QUE SE ATUALIZAM EM TEMPO REAL</span></div>
+          <div class="project-info"><div class="project-meta"><span>PROJETO FULL-STACK</span><span>01 / 01</span></div><h3>TicketFlow</h3><p>Sistema de tickets com atualizações em tempo real. No frontend, estados de carregamento, erro e vazio são tratados com clareza. No backend, eventos Socket.IO mantêm a equipe atualizada quando um ticket é criado ou muda de status.</p><div class="tag-list"><span>React</span><span>TypeScript</span><span>TanStack Query</span><span>Socket.IO</span><span>Express</span></div><div class="project-links"><a href="https://github.com/Luc4sBrs/TicketFlow" target="_blank" rel="noreferrer">Ver código no GitHub <span>↗</span></a><span>Vercel + Render</span></div></div>
+        </article>
+        <p class="projects-footnote">Mais projetos em desenvolvimento. <a href="https://github.com/Luc4sBrs" target="_blank" rel="noreferrer">Explore meu GitHub ↗</a></p>
+      </section>
+
+      <section class="contact section-pad" id="contato"><div class="contact-left"><div class="section-kicker"><span>04</span><span>CONTATO</span></div><p class="eyebrow">ABERTO A NOVAS OPORTUNIDADES</p><h2>Vamos construir<br />algo que importa<span class="period">?</span></h2><a class="button button-light" href="mailto:lucasbrayan008@gmail.com">Fale comigo <span>↗</span></a></div><div class="contact-right"><div><span>EMAIL</span><a href="mailto:lucasbrayan008@gmail.com">lucasbrayan008@gmail.com ↗</a></div><div><span>LINKEDIN</span><a href="https://www.linkedin.com/in/lucas-brayan" target="_blank" rel="noreferrer">linkedin.com/in/lucas-brayan ↗</a></div><div><span>GITHUB</span><a href="https://github.com/Luc4sBrs" target="_blank" rel="noreferrer">github.com/Luc4sBrs ↗</a></div><div><span>LOCALIZAÇÃO</span><p>Jaraguá do Sul, Santa Catarina · Brasil</p></div></div></section>
+    </main>
+    <footer><a class="brand" href="#inicio"><span class="brand-mark">LB</span><span>lucas brayan</span></a><span>FEITO COM CURIOSIDADE E CAFÉ <b>✳</b></span><span>© <span id="year"></span> LUCAS BRAYAN DA SILVA</span></footer>
+  </body>
+</html>
